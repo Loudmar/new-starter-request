@@ -1,0 +1,61 @@
+.new-request-button {
+  margin: 10px;
+  padding: 5.5px;
+  border-radius: 5px;
+  background-color: green;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.new-request-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close {
+  font-size: 2rem;
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: red;
+}
+
+form input {
+  width: 170px;
+  height: 1.32rem;
+  margin: 0.2rem;
+  border: 1px solid #151618;
+  border-radius: 5px;
+}
+
+form input:focus {
+  outline: 2px solid lightblue;
+}
+
+.modal-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-button {
+  margin-top: 1rem;
+  padding: 2.5px;
+  border-radius: 5px;
+  background-color: green;
+  color: whitesmoke;
+}
+
+.modal-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

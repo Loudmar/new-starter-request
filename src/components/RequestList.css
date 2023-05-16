@@ -1,0 +1,60 @@
+.request-list-header {
+  margin: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+  border: 1px solid black;
+  padding: 5px;
+  flex: 1;
+}
+
+th {
+  background-color: lightgray;
+}
+
+.table-list-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  background-color: #ccc;
+  border-color: #ccc;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: green;
+  border-color: green;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.request-list-delete-button {
+  margin: 10px;
+  padding: 2.5px;
+  border-radius: 5px;
+  background-color: red;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.request-list-delete-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
