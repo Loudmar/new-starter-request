@@ -64,17 +64,28 @@ function RequestList(props) {
     localStorage.setItem("requests", JSON.stringify(updateRequests));
   };
 
+  const tableHead = [
+    "First Name",
+    "Last Name",
+    "Job Title",
+    "Line Manager",
+    "Start Date",
+  ];
+
   return (
     <div>
       <h2 className="request-list-header">Request List</h2>
       <table>
         <thead>
           <tr>
-            <th>First Name</th>
+            {tableHead.map((el, i) => (
+              <th key={i}>{el}</th>
+            ))}
+            {/* <th>First Name</th>
             <th>Last Name</th>
             <th>Job Title</th>
             <th>Line Manager</th>
-            <th>Start Date</th>
+            <th>Start Date</th> */}
             <th>
               Business Area
               <select

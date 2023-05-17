@@ -53,6 +53,18 @@ function RequestForm() {
     localStorage.setItem("requests", JSON.stringify(requests));
   }, [requests]);
 
+  //Clear form
+
+  const handleClearForm = () => {
+    setFirstName("");
+    setLastName("");
+    setJobTitle("");
+    setLineManager("");
+    setStartDate("");
+    setBusinessArea("");
+    setErrorMessage("");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -91,13 +103,7 @@ function RequestForm() {
 
     setLatestId(latestId + 1);
 
-    setFirstName("");
-    setLastName("");
-    setJobTitle("");
-    setLineManager("");
-    setStartDate("");
-    setBusinessArea("");
-    setErrorMessage("");
+    handleClearForm();
 
     setShowModal(false);
   };
@@ -188,9 +194,18 @@ function RequestForm() {
           </div>
 
           {errorMessage && <p className="error-message">{errorMessage}</p>}
-          <button className="modal-button" type="submit">
-            Submit
-          </button>
+          <div>
+            <button className="modal-button" type="submit">
+              Submit
+            </button>
+            <button
+              className="modal-button-clear"
+              type="button"
+              onClick={handleClearForm}
+            >
+              Clear
+            </button>
+          </div>
         </form>
       </Modal>
       <RequestList requests={requests} />

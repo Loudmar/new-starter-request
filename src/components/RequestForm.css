@@ -55,7 +55,22 @@ form input:focus {
   color: whitesmoke;
 }
 
-.modal-button:hover {
+.modal-button:hover,
+.modal-button-clear:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.modal-button-clear {
+  margin-top: 1rem;
+  margin-left: 10px;
+  padding: 2.5px;
+  border-radius: 5px;
+  background-color: rgb(151, 138, 0);
+  color: whitesmoke;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
 }
